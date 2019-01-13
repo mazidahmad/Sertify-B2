@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+            <meta name="charset utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Stamper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+<style>
+    .h3 {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .head {
+      font-family:Arial, Helvetica, sans-serif;
+
+    }
+
+</style>
+    <bpdy>
+        <br>
+        <br>
+            <!-- Check Of Stamper -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <form >
+                            <h3> Check Stamper of Document</h3>
+                            <p>See who the signer of the document is.</p>
+                            
+                            <div class="form-group">
+                                <label>File</label>
+                                
+                                <div class="custom-file mb-3">
+                                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                    <small class="form-text text-muted">Upload the original file to retrieve the document fingerprint; remember, nothing is ever stored.</small></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="head">Hash</div>
+                                  <input type="text" class="form-control" readonly>
+                                  <small class="form-text text-muted">The fingerprint of the document (Keccak-256 hash)</small>
+                            </div>
+                                
+                            <div class="form-group">
+                                <button type="button" class="btn btn-primary">Check Stamper</button>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="head">Stamper</div>
+                                <input type="text" class="form-control" readonly>
+                                <small class="form-text text-muted">When the document was notarized.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="head">Datetime</div>
+                                <input type="text" class="form-control" readonly>
+                                <small class="form-text text-muted">Check Stamper</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </bpdy>
+</html>
